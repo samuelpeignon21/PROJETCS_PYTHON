@@ -6,11 +6,14 @@ Notebooks Python (Google Colab) classés par projet : intégration **Odoo / Teep
 
 | Dossier | Contenu |
 |---|---|
-| [`odoo-axians/`](odoo-axians/) | Extraction via l'API Odoo (XML-RPC) : tickets Helpdesk, utilisateurs, clients, contacts |
+| [`odoo-axians/`](odoo-axians/) | Extraction via l'API Odoo (XML-RPC) : tickets Helpdesk, utilisateurs, clients |
+| [`migration-odoo-teepee/`](migration-odoo-teepee/) | Préparation des clients, contacts et tickets Odoo avant import dans Teepee |
 | [`teepee/`](teepee/) | Tests d'authentification et d'appel de l'API Teepee |
-| [`cegelec-nc/`](cegelec-nc/) | Nettoyage des exports clients Cegelec Nouvelle-Calédonie avant import |
+| [`cegelec-nc/`](cegelec-nc/) | Nettoyage des exports clients Cegelec Nouvelle-Calédonie, liste clients Codex |
+| [`sites-equipements/`](sites-equipements/) | Sites (FANC) et équipements |
 | [`adresses/`](adresses/) | Référentiels villes / quartiers / codes postaux (Nouvelle-Calédonie, Polynésie française) |
-| `formation-data-analyst/` | Exercices et cas pratiques (Python, pandas, statistiques, EDA) |
+| [`vin-millesimes/`](vin-millesimes/) | Nettoyage des tables domaines, commentaires et appellations |
+| [`formation-data-analyst/`](formation-data-analyst/) | Exercices et cas pratiques (Python, pandas, statistiques, EDA) |
 | [`tools/`](tools/) | Scripts utilitaires (nettoyage des notebooks avant commit) |
 
 Chaque dossier a son propre `README.md` (objectif, entrées, sorties, ordre d'exécution).

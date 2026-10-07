@@ -69,7 +69,7 @@ def clean_notebook(nb):
             used_all |= used
             for l in src:
                 if SUSPECT.search(l):
-                    warnings.append(f"cellule {i}: {l.strip()[:80]}")
+                    warnings.append(f"cellule {i}: {l.strip()[:30]}…")
         cell["source"] = src
         keep = {k: v for k, v in cell.get("metadata", {}).items() if k in ("id",)}
         cell["metadata"] = keep

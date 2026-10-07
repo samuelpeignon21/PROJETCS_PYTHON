@@ -8,3 +8,5 @@ unidecode
 ydata-profiling
 seaborn
 matplotlib
+rapidfuzz
+ftfy
