@@ -1,0 +1,18 @@
+# Secrets
+.env
+*.key
+secrets*.json
+
+# Données (clients, exports Odoo/Teepee) : ne jamais versionner
+*.xlsx
+*.xls
+*.csv
+data/
+exports/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
