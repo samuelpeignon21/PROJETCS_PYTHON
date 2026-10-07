@@ -11,6 +11,7 @@
 | `live_coding_les_valeurs_manquantes_python` | Détection et traitement des valeurs manquantes |
 | `enonce_data_cleaning_python` | Nettoyage de données (exercices) |
 | `enonce_cas_data_cleaning` | Cas complet de nettoyage |
+| `exercice_value_counts_villes` | Mini-exercice : `read_csv` puis `value_counts` sur les villes (jours fériés) |
 | `enonce_scraping_python` | Scraping web |
 | `enonce_api_rickmorty` | Appels d'API (Rick & Morty) |
 
@@ -26,6 +27,8 @@
 | `live_coding_heatmaps_stats` | Heatmaps et corrélations |
 | `live_coding_inference_statistiques_stats` / `enonce_inference_statistiques` | Inférence statistique |
 | `live_coding_tests_d_hypotheses` / `enonce_les_tests_d_hypotheses` | Tests d'hypothèses |
+| `exercice_stats_descriptives_simpson` | Moyenne, médiane, variance, quartiles, boxplot sur 20 valeurs ; comparaison de deux hôpitaux par tranche d'âge (paradoxe de Simpson). Les deux dernières cellules (`set_index`, `merge`) sont inachevées. |
+| `exercice_test_hypotheses_durees_de_vie` | Test d'hypothèse à deux échantillons (statistique t ≈ −3,81, p ≈ 0,0002, H0 rejetée) |
 
 ## 03 – Cas pratiques (`03-cas-pratiques/`)
 | Notebook | Cas |
