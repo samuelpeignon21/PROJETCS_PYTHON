@@ -1,9 +1,9 @@
 # Teepee
 
-| Notebook | Objectif | État |
+| Notebook | Purpose | Status |
 |---|---|---|
-| `teepee_api_auth.ipynb` | Essais d'authentification à l'API Teepee (OAuth2 *client credentials*, puis endpoint `ExternAPI/token`) | `/oauth/token` répond 404 ; `/v2/ExternAPI/token` répond 500. À reprendre avec la documentation Swagger. |
+| `teepee_api_auth.ipynb` | Attempts to authenticate to the Teepee API (OAuth2 *client credentials*, then the `ExternAPI/token` endpoint) | `/oauth/token` returns 404; `/v2/ExternAPI/token` returns 500. To be resumed with the Swagger documentation. |
 
-## Variables d'environnement
+## Environment variables
 
 `TEEPEE_CLIENT_ID`, `TEEPEE_CLIENT_SECRET`, `TEEPEE_API_KEY`.

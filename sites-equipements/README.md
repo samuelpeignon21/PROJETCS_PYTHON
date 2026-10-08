@@ -1,6 +1,6 @@
-# Sites et équipements
+# Sites and equipment
 
-| Notebook | Objectif | Entrée (non versionnée) |
+| Notebook | Purpose | Input (not versioned) |
 |---|---|---|
-| `site_fanc` | Extrait les sites, composants et locaux depuis la liste des occupants (nov. 2024), dédoublonne et exporte `sous-sites.xlsx` | `Liste des occupants par composants et locaux-nov-2024 (…).xlsx` |
-| `equipement` | Prépare les équipements : filtre par site, harmonise les désignations de sites, rapprochement flou des noms (`rapidfuzz`) entre l'export Teepee et les archives | `Equipement_dataExport (1).xlsx`, `Eq_Archives.xlsx`, `Eq_OPT_FT_SGCB.xlsx` |
+| `site_fanc` | Extracts sites, components and rooms from the occupant list (Nov. 2024), de-duplicates and exports `sous-sites.xlsx` | `Liste des occupants par composants et locaux-nov-2024 (…).xlsx` |
+| `equipement` | Prepares equipment: filters by site, harmonises site names, fuzzy-matches names (`rapidfuzz`) between the Teepee export and the archives | `Equipement_dataExport (1).xlsx`, `Eq_Archives.xlsx`, `Eq_OPT_FT_SGCB.xlsx` |
