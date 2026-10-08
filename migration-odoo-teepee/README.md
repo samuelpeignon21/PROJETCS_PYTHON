@@ -1,14 +1,14 @@
-# Migration Odoo → Teepee
+# Odoo → Teepee migration
 
-Préparation des données Odoo (Axians NC) avant import dans Teepee. Chaque notebook part d'un export Excel d'Odoo (non versionné) et produit un fichier prêt à importer.
+Preparation of Odoo data (Axians NC) before import into Teepee. Each notebook starts from an Odoo Excel export (not versioned) and produces a file ready to import.
 
-Ordre conseillé : **clients → entreprise principale associée → contacts → tickets**.
+Recommended order: **clients → associated main company → contacts → tickets**.
 
-| Notebook | Objectif |
+| Notebook | Purpose |
 |---|---|
-| `odoo_clients_axians` | Sociétés, équipements et étiquettes : nettoyage des valeurs, normalisation des villes et pays, séparation société / équipements |
-| `entreprise_principale_associee_odoo_axians` | Rattache chaque site à son entreprise principale à partir du mapping sites ↔ entreprises et de l'export Teepee des sites |
-| `odoo_contacts_axians` | Contacts : noms, courriels (`Nom <mail>` → mail seul), postes et titres ; suppression des lignes parasites |
-| `ticket_odoo_vers_teepee` | Tickets Helpdesk : nettoyage du HTML des messages, regroupement des échanges dans une description complète, export `tickets_odoo_nettoyes.xlsx` |
+| `odoo_clients_axians` | Companies, equipment and tags: value cleaning, city and country normalisation, separation of company / equipment |
+| `entreprise_principale_associee_odoo_axians` | Links each site to its main company using the sites ↔ companies mapping and the Teepee sites export |
+| `odoo_contacts_axians` | Contacts: names, e-mails (`Name <mail>` → mail only), positions and titles; removal of stray rows |
+| `ticket_odoo_vers_teepee` | Helpdesk tickets: cleaning of message HTML, grouping of exchanges into a complete description, export of `tickets_odoo_nettoyes.xlsx` |
 
-Dépendances supplémentaires : `rapidfuzz`, `unidecode`.
+Additional dependencies: `rapidfuzz`, `unidecode`.

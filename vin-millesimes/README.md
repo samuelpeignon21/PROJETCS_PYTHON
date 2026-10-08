@@ -1,11 +1,11 @@
-# Vins et millésimes
+# Wines and vintages
 
-Nettoyage des tables d'un projet sur les domaines viticoles, les millésimes et les appellations. Les fichiers sources (`Principal_Domaines.xlsx`, `Principal_Commentaires.xlsx`, `Lien_Appelation_Region.csv`) ne sont pas versionnés.
+Cleaning of the tables of a project about wine estates, vintages and appellations. The source files (`Principal_Domaines.xlsx`, `Principal_Commentaires.xlsx`, `Lien_Appelation_Region.csv`) are not versioned.
 
-| Notebook | Table traitée | Principales étapes |
+| Notebook | Table processed | Main steps |
 |---|---|---|
-| `notebook_domaines` | Domaines | correction des textes (`ftfy`), remplacement des faux NaN, extraction du domaine des URL |
-| `notebook_commentaires` | Commentaires | idem, sélection et typage des colonnes, taux de valeurs nulles |
-| `notebook_app_region` | Lien appellation / région | nettoyage de la table de correspondance |
+| `notebook_domaines` | Estates (*Domaines*) | text fixing (`ftfy`), replacement of fake NaNs, extraction of the domain from URLs |
+| `notebook_commentaires` | Comments | same, plus column selection and typing, null-value rate |
+| `notebook_app_region` | Appellation / region link | cleaning of the mapping table |
 
-Dépendance supplémentaire : `ftfy` (`pip install ftfy`).
+Additional dependency: `ftfy` (`pip install ftfy`).

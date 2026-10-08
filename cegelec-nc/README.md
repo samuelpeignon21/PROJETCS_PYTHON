@@ -1,9 +1,9 @@
-# Cegelec Nouvelle-Calédonie
+# Cegelec New Caledonia
 
-| Notebook | Objectif | Entrée | Sortie |
+| Notebook | Purpose | Input | Output |
 |---|---|---|---|
-| `clients_cegelec_nc.ipynb` | Nettoie l'export Teepee « Entreprise » : renomme les colonnes, regroupe les e-mails (`Mails`) et contacts (`Contacts`) sur plusieurs lignes, remplace les 0 par des vides, normalise villes et pays, complète les adresses de facturation | `TEEPEE_Entreprise_dataExport (3).xlsx` (non versionné) | `df2_export.xlsx` |
-| `liste_client_codex.ipynb` | Rapproche la liste clients Codex (`F561_Liste clients ….xlsx`) des entreprises Teepee par comparaison floue de noms (`rapidfuzz`) | Liste clients Codex (non versionnée) | tableau de correspondance |
-| `entreprises_bi_planning.ipynb` | Compare les entreprises du planning (statut « Terminé ») avec l'export Teepee « Entreprise » et la liste « Entreprise à prendre » | exports Teepee (non versionnés) | liste d'entreprises à traiter |
+| `clients_cegelec_nc.ipynb` | Cleans the Teepee "Entreprise" export: renames columns, groups e-mails (`Mails`) and contacts (`Contacts`) spread over several rows, replaces 0 with blanks, normalises cities and countries, completes billing addresses | `TEEPEE_Entreprise_dataExport (3).xlsx` (not versioned) | `df2_export.xlsx` |
+| `liste_client_codex.ipynb` | Matches the Codex client list (`F561_Liste clients ….xlsx`) against Teepee companies using fuzzy name comparison (`rapidfuzz`) | Codex client list (not versioned) | matching table |
+| `entreprises_bi_planning.ipynb` | Compares the companies of the planning ("Terminé" / done status) with the Teepee "Entreprise" export and the "Entreprise à prendre" (companies to handle) list | Teepee exports (not versioned) | list of companies to process |
 
-Dépendance supplémentaire : `rapidfuzz`.
+Additional dependency: `rapidfuzz`.

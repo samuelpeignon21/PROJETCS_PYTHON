@@ -1,13 +1,13 @@
 # Odoo – Axians NC
 
-Notebooks d'extraction de données depuis l'API Odoo (XML-RPC), utilisées en entrée de Power BI.
+Notebooks extracting data from the Odoo API (XML-RPC), used as input for Power BI.
 
-| Notebook | Objectif | Sortie |
+| Notebook | Purpose | Output |
 |---|---|---|
-| `test_connexion_api_odoo_pbi.ipynb` | Teste la connexion, puis extrait les tickets `helpdesk.ticket` par pages de 100 (tri sur `id` pour éviter une boucle infinie), les utilisateurs `res.users` et les clients `res.partner` | `tickets.xlsx` |
+| `test_connexion_api_odoo_pbi.ipynb` | Tests the connection, then extracts `helpdesk.ticket` tickets in pages of 100 (sorted on `id` to avoid an infinite loop), `res.users` users and `res.partner` clients | `tickets.xlsx` |
 
-## Variables d'environnement
+## Environment variables
 
-`ODOO_URL`, `ODOO_DB`, `ODOO_USERNAME`, `ODOO_API_KEY` (voir `../.env.example`).
+`ODOO_URL`, `ODOO_DB`, `ODOO_USERNAME`, `ODOO_API_KEY` (see `../.env.example`).
 
-> Au dernier passage : 11 404 tickets, 43 agents, environ 1 900 clients distincts.
+> At the last run: 11,404 tickets, 43 agents, about 1,900 distinct clients.

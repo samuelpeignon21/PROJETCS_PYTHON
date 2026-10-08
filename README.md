@@ -1,36 +1,36 @@
 # projetcs_python
 
-Notebooks Python (Google Colab) classés par projet : intégration **Odoo / Teepee**, préparation des données **Cegelec NC**, nettoyage d'**adresses** (Nouvelle-Calédonie, Polynésie française) et exercices de la formation **Data Analyst**.
+Python notebooks (Google Colab) organised by project: **Odoo / Teepee** integration, **Cegelec NC** data preparation, **address** cleaning (New Caledonia, French Polynesia) and exercises from the **Data Analyst** training course.
 
 ## Organisation
 
-| Dossier | Contenu |
+| Folder | Content |
 |---|---|
-| [`odoo-axians/`](odoo-axians/) | Extraction via l'API Odoo (XML-RPC) : tickets Helpdesk, utilisateurs, clients |
-| [`migration-odoo-teepee/`](migration-odoo-teepee/) | Préparation des clients, contacts et tickets Odoo avant import dans Teepee |
-| [`teepee/`](teepee/) | Tests d'authentification et d'appel de l'API Teepee |
-| [`cegelec-nc/`](cegelec-nc/) | Nettoyage des exports clients Cegelec Nouvelle-Calédonie, liste clients Codex |
-| [`sites-equipements/`](sites-equipements/) | Sites (FANC) et équipements |
-| [`adresses/`](adresses/) | Référentiels villes / quartiers / codes postaux (Nouvelle-Calédonie, Polynésie française) |
-| [`vin-millesimes/`](vin-millesimes/) | Nettoyage des tables domaines, commentaires et appellations |
-| [`formation-data-analyst/`](formation-data-analyst/) | Exercices et cas pratiques (Python, pandas, statistiques, EDA) |
-| [`tools/`](tools/) | Scripts utilitaires (nettoyage des notebooks avant commit) |
+| [`odoo-axians/`](odoo-axians/) | Extraction through the Odoo API (XML-RPC): Helpdesk tickets, users, clients |
+| [`migration-odoo-teepee/`](migration-odoo-teepee/) | Preparation of Odoo clients, contacts and tickets before import into Teepee |
+| [`teepee/`](teepee/) | Authentication and call tests for the Teepee API |
+| [`cegelec-nc/`](cegelec-nc/) | Cleaning of Cegelec New Caledonia client exports, Codex client list |
+| [`sites-equipements/`](sites-equipements/) | Sites (FANC) and equipment |
+| [`adresses/`](adresses/) | City / district / postal code reference lists (New Caledonia, French Polynesia) |
+| [`vin-millesimes/`](vin-millesimes/) | Cleaning of the wine estates, comments and appellations tables |
+| [`formation-data-analyst/`](formation-data-analyst/) | Exercises and case studies (Python, pandas, statistics, EDA) |
+| [`tools/`](tools/) | Utility scripts (notebook cleaning before commit) |
 
-Chaque dossier a son propre `README.md` (objectif, entrées, sorties, ordre d'exécution).
+Each folder has its own `README.md` (purpose, inputs, outputs, execution order).
 
-## Règles du dépôt
+## Repository rules
 
-1. **Aucun secret dans les notebooks.** Les identifiants sont lus via `os.environ[...]` ; la liste des variables est dans [`.env.example`](.env.example).
-2. **Aucune donnée client.** Les fichiers `.xlsx` / `.csv` sont ignorés (`.gitignore`) et les notebooks sont versionnés **sans sorties**.
-3. Avant de committer un nouveau notebook :
+1. **No secrets in notebooks.** Credentials are read through `os.environ[...]`; the list of variables is in [`.env.example`](.env.example).
+2. **No client data.** `.xlsx` / `.csv` files are ignored (`.gitignore`) and notebooks are versioned **without outputs**.
+3. Before committing a new notebook:
    ```bash
-   python tools/clean_notebook.py mon_notebook.ipynb mon_notebook.ipynb
+   python tools/clean_notebook.py my_notebook.ipynb my_notebook.ipynb
    ```
-   Le script supprime les sorties, retire les métadonnées Colab et remplace les identifiants écrits en dur par des variables d'environnement.
+   The script removes outputs, strips Colab metadata and replaces hard-coded credentials with environment variables.
 
-## Utilisation dans Colab
+## Using the notebooks in Colab
 
-Ouvrir un notebook depuis GitHub (`Fichier > Ouvrir le notebook > GitHub`), puis renseigner les variables dans le panneau **Secrets** de Colab et les exposer avec :
+Open a notebook from GitHub (`File > Open notebook > GitHub`), then fill in the variables in Colab's **Secrets** panel and expose them with:
 
 ```python
 import os
@@ -39,7 +39,7 @@ for k in ["ODOO_URL", "ODOO_DB", "ODOO_USERNAME", "ODOO_API_KEY"]:
     os.environ[k] = userdata.get(k)
 ```
 
-## Installation locale
+## Local installation
 
 ```bash
 pip install -r requirements.txt
